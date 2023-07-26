@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+body, .header, .footer, .content, ul, li {
+  display: flex;
+
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
 }
+
+
 
 img {
   width: 600px;
+  
 }
 
 button {
@@ -25,3 +36,51 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+.content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.header, .footer {
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+ul.right-links, ul.left-links{
+  width: 100%;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+  
+
+.right-links {
+  justify-content: right;
+}
+
+.left-links {
+  justify-content: left;
+}
+
+li {
+  margin: 0px 15px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+
+/* 
+
+- The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen.
+- The header and footer have padding.
+- The links in the header and footer are pushed to either side.
+- There is space between the links in the header and footer.
+- The footer has a light gray background (`#eeeeee`).
+- The logo, input and buttons are centered in the screen.
+- The buttons have an appropriate amount of padding.
+- There is space between the logo, input and buttons.
+
+*/
